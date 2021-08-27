@@ -20,10 +20,16 @@ body,
   height: 100%;
 }
 
+a:hover {
+  color: #ff8000;
+}
+
 header {
   grid-area: header;
   background-color: #637377;
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 header a {
