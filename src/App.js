@@ -8,6 +8,8 @@ function App() {
           </header>
           <main>
           </main>
+          <footer>
+          </footer>
         </div>
     </div>
   );
