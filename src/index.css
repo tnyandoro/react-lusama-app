@@ -13,6 +13,19 @@ body,
     display: grid;
     grid-template-areas: "header"
     "main"
-    "footer"
+    "footer";
+    grid-template-rows:5rem 1fr 5rem ;
+    grid-template-columns: 1fr;
   }
 
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
