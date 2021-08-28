@@ -7,7 +7,12 @@ export default class Filter extends Component {
         <div className="filter-result">{this.props.count}</div>
         <div className="filter-sort">
           {" "}
-          Order <select></select>
+          Order{ ""} 
+          <select>
+            <option>Latest</option>
+            <option value="lowest">Lowest</option>
+            <option value="highest">Highest</option>
+          </select>
         </div>
         <div className="filter-size">
           Filter
