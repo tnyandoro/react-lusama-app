@@ -13,6 +13,21 @@ class App extends React.Component {
       sort: "",
     };
   }
+
+  sortProducts() {
+    let products = this.state.products;
+    if (this.state.sort === "lowest") {
+      products.sort((a, b) => a.price - b.price);
+    } else if (this.state.sort === "highest") {
+      products.sort((a, b) => b.price - a.price);
+    }
+    this.setState({ products });
+  }
+
+  filterProducts = (size, sort) => {
+
+  };
+  
   render() {
     return (
       <div className="App">
