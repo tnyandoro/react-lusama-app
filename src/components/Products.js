@@ -12,6 +12,7 @@ export default class Products extends Component {
                   <img src={product.image} alt="product image"></img>
                   <p>{product.title}</p>
                 </a>
+                <div className="price-price">{product.price}</div>
               </div>
             </li>
           ))}
