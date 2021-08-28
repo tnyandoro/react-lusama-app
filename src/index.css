@@ -68,3 +68,13 @@ footer {
 .sidebar {
   flex:1 20rem;
 }
+
+/* products */
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
