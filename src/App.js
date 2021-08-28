@@ -1,3 +1,6 @@
+// feature
+import React from 'react';
+import product from './data.json';
 
 function App() {
   return (
