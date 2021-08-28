@@ -27,6 +27,7 @@ class App extends React.Component {
                   count={this.state.products.length}
                   size={this.state.size}
                   sort={this.state.sort}
+                  filterProducts={this.filterProducts}
                 />
                 <Products products={this.state.products} />
               </div>
