@@ -1,23 +1,37 @@
+// feature
+import React from "react";
+import data from "./data.json";
+import Products from "./components/Products"
 
-// feature 1
-import React from 'react'
-
-function App() {
-  return (
-    <div className="App">
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      products: data.products,
+      size: "",
+      sort: "",
+    };
+  }
+  render() {
+    return (
+      <div className="App">
         <div className="grid-container">
           <header>
             <a href="/">Lusama Shop</a>
           </header>
           <main>
-          Product List
+            <div className="content">
+              <div className="main">
+                <Products products={this.state.products} />
+              </div>
+              <div className="sidebar">Cart Items</div>
+            </div>
           </main>
-          <footer>
-          Alll rights reserved.
-          </footer>
+          <footer>Alll rights reserved.</footer>
         </div>
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default App;
