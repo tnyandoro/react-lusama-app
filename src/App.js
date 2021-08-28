@@ -1,8 +1,10 @@
 // feature
 import React from 'react';
-import product from './data.json';
+import data from './data.json';
 
-function App() {
+class App extends React.Component {
+  render() {
+
   return (
     <div className="App">
         <div className="grid-container">
@@ -18,6 +20,7 @@ function App() {
         </div>
     </div>
   );
+  }
 }
 
 export default App;
