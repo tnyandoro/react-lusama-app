@@ -9,9 +9,12 @@ body,
   margin: 0;
 }
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
   font-size: 1.6 rem;
-  font-family: "Helvetica Neue",Helvetica,Arial;
+  font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
 .grid-container {
@@ -62,11 +65,11 @@ footer {
 }
 
 .main {
-  flex:3 60rem;
+  flex: 3 60rem;
 }
 
 .sidebar {
-  flex:1 20rem;
+  flex: 1 20rem;
 }
 
 /* products */
@@ -78,4 +81,15 @@ footer {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.products li {
+  flex: 1 1 29rem;
+  height: 47rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.product {
+  
 }
