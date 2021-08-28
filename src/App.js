@@ -6,7 +6,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: data
+      products: data.products,
+      size: "",
+      sort: ""
     };
   }
   render() {
