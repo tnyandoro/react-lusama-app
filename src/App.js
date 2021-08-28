@@ -1,6 +1,6 @@
 // feature
-import React from 'react';
-import data from './data.json';
+import React from "react";
+import data from "./data.json";
 
 class App extends React.Component {
   constructor(props) {
@@ -8,25 +8,26 @@ class App extends React.Component {
     this.state = {
       products: data.products,
       size: "",
-      sort: ""
+      sort: "",
     };
   }
   render() {
-  return (
-    <div className="App">
+    return (
+      <div className="App">
         <div className="grid-container">
           <header>
             <a href="/">Lusama Shop</a>
           </header>
           <main>
-          Product List
+            <div className="content">
+              <div className="main"></div>
+              <div className="sidebar"></div>
+            </div>
           </main>
-          <footer>
-          Alll rights reserved.
-          </footer>
+          <footer>Alll rights reserved.</footer>
         </div>
-    </div>
-  );
+      </div>
+    );
   }
 }
 
