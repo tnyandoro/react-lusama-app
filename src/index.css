@@ -98,3 +98,9 @@ footer {
   max-width: 37rem;
   max-height: 37rem;
 }
+
+.product-price {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
