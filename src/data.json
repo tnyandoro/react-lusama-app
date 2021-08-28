@@ -1,3 +1,10 @@
 {
-  "products": [{"_id": "dress1", "title": "Dress 1"}]
+  "products": [
+    {
+      "_id": "dress1",
+      "title": "Dress 1",
+      "description": "About dress 1",
+      "Price": "18"
+    }
+  ]
 }
