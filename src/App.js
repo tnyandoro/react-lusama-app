@@ -1,8 +1,8 @@
 // feature
 import React from "react";
 import data from "./data.json";
-import Products from "./components/Products"
-import Filter from './components/Filter';
+import Products from "./components/Products";
+import Filter from "./components/Filter";
 
 class App extends React.Component {
   constructor(props) {
@@ -23,7 +23,11 @@ class App extends React.Component {
           <main>
             <div className="content">
               <div className="main">
-                <Filter count={this.state.products.length} />
+                <Filter
+                  count={this.state.products.length}
+                  size={this.state.size}
+                  sort={this.state.sort}
+                />
                 <Products products={this.state.products} />
               </div>
               <div className="sidebar">Cart Items</div>
@@ -37,4 +41,3 @@ class App extends React.Component {
 }
 
 export default App;
-
