@@ -1,7 +1,8 @@
 // feature
 import React from "react";
 import data from "./data.json";
-import Products from "./components/Products"
+import Products from "./components/Products";
+import Filter from "./components/Filter";
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,21 @@ class App extends React.Component {
       sort: "",
     };
   }
+
+  sortProducts(event) {
+    let products = this.state.products;
+    if (this.state.sort === "lowest") {
+      products.sort((a, b) => a.price - b.price);
+    } else if (this.state.sort === "highest") {
+      products.sort((a, b) => b.price - a.price);
+    }
+    this.setState({ products });
+  }
+
+  filterProducts = (event) => {
+
+  };
+  
   render() {
     return (
       <div className="App">
@@ -22,6 +38,13 @@ class App extends React.Component {
           <main>
             <div className="content">
               <div className="main">
+                <Filter
+                  count={this.state.products.length}
+                  size={this.state.size}
+                  sort={this.state.sort}
+                  filterProducts={this.filterProducts}
+                  sortProducts={this.sortProducts}
+                />
                 <Products products={this.state.products} />
               </div>
               <div className="sidebar">Cart Items</div>
@@ -35,4 +58,3 @@ class App extends React.Component {
 }
 
 export default App;
-
