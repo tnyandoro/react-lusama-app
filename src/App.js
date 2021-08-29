@@ -14,7 +14,7 @@ class App extends React.Component {
     };
   }
 
-  sortProducts() {
+  sortProducts(sort) {
     let products = this.state.products;
     if (this.state.sort === "lowest") {
       products.sort((a, b) => a.price - b.price);
